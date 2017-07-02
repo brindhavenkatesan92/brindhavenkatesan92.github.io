@@ -1,0 +1,54 @@
+body{
+	background-image: url('../images/bg1.jpg');
+	background-attachment:fixed;
+}
+.navbar{
+	background-color: hsla(200, 3%, 9%, 0.8);
+}
+.navbar-right{
+	margin-left:auto;
+	margin-right: 0px !important;
+}
+.navbar-brand{
+	font-family: 'Gloria Hallelujah', cursive;
+	/*font-size:27px;*/
+}
+.portfolio-content{
+	background-color:rgba(28, 28, 27, 0.6);;
+	margin: 73px 10px 10px 10px;
+}
+#home{
+	height: 500px;
+}
+#about{
+	height:300px;
+}
+.portfolio-face{
+	margin-top:50px;
+	/*width:343px;*/
+	width:24vw;
+}
+.portfolio-designation {
+    color: white;
+    font-family: 'Exo', sans-serif;
+	font-size: 3vw;
+    line-height: 93px;
+}
+@media screen and (max-width:940px){
+	.portfolio-face{
+		width:226px;
+	}
+	.portfolio-designation{
+		font-size: 20px;
+	}
+}
+@media screen and (max-width:500px){
+	.portfolio-designation{
+		font-size: 20px;
+	    line-height: 70px;
+	} 
+	.portfolio-face{
+		width:200px;
+	}
+}
+
