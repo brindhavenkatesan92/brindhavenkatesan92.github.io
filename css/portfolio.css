@@ -1,9 +1,28 @@
 body{
-	background-image: url('../images/bg1.jpg');
-	background-attachment:fixed;
+    background: url(../images/bg1.jpg) no-repeat fixed;
+    background-size: cover;
 }
 .navbar{
-	background-color: hsla(200, 3%, 9%, 0.8);
+	/*background-color: black;*/
+	/*background-color: hsla(200, 3%, 9%, 0.8);*/ /*grey*/
+	background-color: rgba(55, 41, 124, 0.9); /*blue*/
+	transition:all 0.5s;
+}
+.nav-item .nav-link{
+	transition: 0.5s;
+}
+.navbar.transparent{
+	background-color: transparent;
+}
+.navbar:not(.transparent) .nav-item .nav-link{
+	padding-right: 0.5rem;
+    padding-left: 0.5rem;
+    padding-top: 0.2rem;
+    padding-bottom: 0.2rem;
+}
+.navbar:not(.transparent) .nav-item.active .nav-link{
+	background-color: white;
+    color:rgb(53,44,124);
 }
 .navbar-right{
 	margin-left:auto;
@@ -14,14 +33,33 @@ body{
 	/*font-size:27px;*/
 }
 .portfolio-content{
-	background-color:rgba(28, 28, 27, 0.6);;
-	margin: 73px 10px 10px 10px;
+	background-color:rgba(28, 28, 27, 0.6);
+	margin: 4.56rem 0.625rem 0.625rem 0.625rem;
+	/*margin: 73px 10px 10px 10px;*/
 }
 #home{
-	height: 500px;
+	padding: 1vw;
 }
-#about{
-	height:300px;
+#project{
+	background-color: rgba(25, 24, 24, 0.8);
+	padding-left: 15px;
+	padding-top:15px;
+}
+#project .row{
+	margin-right:0;
+	margin-left:0;
+}
+#project .row div{
+	padding-top: 0px;
+	padding-bottom: 15px;	
+	padding-left: 0px;
+	padding-right: 15px;
+}
+#project img{
+	content: url('../images/placeholder.jpg');
+}
+#project img.tribute{
+	content: url('../images/tribute.png');
 }
 .portfolio-face{
 	margin-top:50px;
@@ -29,10 +67,31 @@ body{
 	width:24vw;
 }
 .portfolio-designation {
-    color: white;
     font-family: 'Exo', sans-serif;
 	font-size: 3vw;
     line-height: 93px;
+}
+.portfolio-contact{
+	margin:30px 0px 10px 20px;
+    height: calc(100% - 30px);
+    background-color: rgba(54, 54, 49, 0.4);
+}
+.devicon{
+	font-size: 3.5rem;
+}
+.portfolio-skillset{
+	display: inline-block;
+	transition: transform 0.3s ease;
+}
+.portfolio-skillset:hover{
+	transform: scale(1.1);
+}
+.portfolio-skillsets{
+    margin-top: 5rem;
+    text-align: center;
+}
+.portfolio-skillsets i{
+	margin-left: 6px;
 }
 @media screen and (max-width:940px){
 	.portfolio-face{
