@@ -5,11 +5,14 @@
 		<link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
 		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
 		<link rel="stylesheet" type="text/css" href="css/animate.css">
+		<link rel="stylesheet" type="text/css" href="css/styles.css"/>
 		<link rel="stylesheet" type="text/css" href="css/portfolio.css"/>
 		<link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah|Lobster" rel="stylesheet">
-		<link href="https://fonts.googleapis.com/css?family=Exo" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Cormorant+Unicase" rel="stylesheet">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<script src="https://use.edgefonts.net/english-small-caps.js"></script>
 	</head>
-	<body onload="alternavbar()">
+	<body class=portfolio>
 		<nav  id='navigator' role='navigation' class='navbar navbar-toggleable-md navbar-inverse fixed-top transparent'>
 				<button type="button" class='navbar-toggler navbar-toggler-right' data-toggle='collapse' data-target='#portfolioNavbar' aria-controls="portfolioNavbar" aria-expanded="false" aria-label="Toggle navigation">
 					<span class="navbar-toggler-icon"></span>
@@ -18,98 +21,109 @@
 				<div class='collapse navbar-collapse' id='portfolioNavbar'>	
 					<ul class='navbar-nav mr-auto navbar-right'>
 						<li class='nav-item active'><a class="nav-link" href='#home'> Home </a></li>
-						<li class='nav-item'><a class="nav-link" href='#about'> About </a></li>
-						<li class='nav-item'> <a class="nav-link" href='#projects'>Projects</a></li>
+						<li class='nav-item'> <a class="nav-link" href='#project'>Projects</a></li>
 						<li class='nav-item'> <a class="nav-link" href='#contact'>Contact</a></li>
 					</ul>
 				</div>
 		</nav>
-		<div class='portfolio-content  text-white'>
+		<div class='text-white'>
 			<div id='home'>
-				<div class='row'>
-					<div class='col-md-6'>
-						<div class='card portfolio-contact'>
-							<div class='card-block'>
-								<div class='card-text animated zoomIn'>
-									<strong><em>Name:</em></strong> <span> Rakshu </span> <br>
-									<strong><em>Email: </em></strong> <span> rachantha@gmail.com </span> <br>
-									<strong><em>Contact:</em></strong><span> +91 9688163361 </span> <br>
-									<strong><em>Place: </em></strong> <span> Chennai, Tamil Nadu, India </span> <br>
-								</div>
-							</div>
-						</div>
+					<div class='text-center'>
+						<img class='rounded-circle' alter='rakshu' src='images/face.png'/>
+						<div class='designation animated fadeInDown'>< Web Developer /></div>
 					</div>
-					<div class='col-md-6'>
-						<div class='text-center'>
-							<img class='rounded-circle  portfolio-face' alter='rakshu' src='images/face.png'/>
-							<div class='portfolio-designation animated fadeInDown'>< Web Developer /></div>
-						</div>
-					</div>
-					</div>
-					<div class='portfolio-skillsets'>
-						<div class='portfolio-skillset'>
+					<div class='skillsets'>
+						<div class='skillset'>
 							<i title='Javascript' data-toggle='tooltip' class="devicon devicon-javascript-plain colored"></i>
 						</div>
-						<div class='portfolio-skillset'>
+						<div class='skillset'>
 							<i title='jQuery' data-toggle='tooltip' class="devicon devicon-jquery-plain-wordmark colored"></i>
 						</div>
-						<div class='portfolio-skillset'>
+						<div class='skillset'>
 							<i title="C-Sharp"  data-toggle='tooltip' class="devicon devicon-csharp-line-wordmark  colored"></i>
 						</div>
-						<div class='portfolio-skillset'>
+						<div class='skillset'>
 							<i title='Bootstrap'  data-toggle='tooltip' class="devicon devicon-bootstrap-plain colored"></i>
 						</div>
-						<div class='portfolio-skillset'>
+						<div class='skillset'>
 							<i title='Sql'  data-toggle='tooltip' class="devicon devicon-mysql-plain colored"></i>
 						</div>
 					</div>
 				</div>
 			<div id='project' class='text-center'>
+				<h2 class='heading'>
+					Projects
+				</h2>
 				<div class='row'>
 					<div class='col-md-3'>
-						<img class='rounded img-fluid w-100 h-100 tribute'/>
+						<a data-placeholder='Tribute' href='https://codepen.io/rakshu/full/owgoXz/' target='_blank'>
+							<img  class='rounded img-fluid w-100 h-100 tribute'/>
+						</a>
 					</div>
 					<div class='col-md-3'>
-						<img class='rounded img-fluid w-100 h-100'/>
+						<a data-placeholder='Placeholder'>
+							<img class='rounded img-fluid w-100 h-100'/>
+						</a>
 					</div>
 					<div class='col-md-3'>
-						<img class='rounded img-fluid w-100 h-100'/>
+						<a data-placeholder='Placeholder'>
+							<img class='rounded img-fluid w-100 h-100'/>
+						</a>
 					</div>
 					<div class='col-md-3'>
-						<img class='rounded img-fluid w-100 h-100'/>
+						<a data-placeholder='Placeholder'>
+							<img class='rounded img-fluid w-100 h-100'/>
+						</a>
 					</div>
 					<div class='col-md-3'>
-						<img class='rounded img-fluid w-100 h-100'/>
+						<a data-placeholder='Placeholder'>
+							<img class='rounded img-fluid w-100 h-100'/>
+						</a>
 					</div>
 					<div class='col-md-3'>
-						<img class='rounded img-fluid w-100 h-100'/>
+						<a data-placeholder='Placeholder'>
+							<img class='rounded img-fluid w-100 h-100'/>
+						</a>
 					</div>
 					<div class='col-md-3'>
-						<img class='rounded img-fluid w-100 h-100'/>
+						<a data-placeholder='Placeholder'>
+							<img class='rounded img-fluid w-100 h-100'/>
+						</a>
 					</div>
 					<div class='col-md-3'>
-						<img class='rounded img-fluid w-100 h-100'/>
+						<a data-placeholder='Placeholder'>
+							<img class='rounded img-fluid w-100 h-100'/>
+						</a>
 					</div>
 				</div>
 			</div>
+			<div id='contact' class='text-center'>
+				<h2>Contact</h2>
+				<div>
+					<a href='https://www.facebook.com/brindha.venkat' target='_blank'>
+						<i class="fa fa-facebook" aria-hidden="true"></i>
+					</a>
+					<a href="https://www.linkedin.com/in/brindha-venkatesan-9a957162/" target='_blank'>
+						<i class="fa fa-linkedin" aria-hidden="true"></i>
+					</a>
+					<a href="http://brindhavenkatesan92.github.io/" target='_blank'>
+						<i class="fa fa-github" aria-hidden="true"></i>
+					</a>
+					<a href="mailto:brindha.venkatesan92@gmail.com?Subject=Hi" target='_blank'>
+						<i class="fa fa-envelope-open" aria-hidden="true"></i>
+					</a>
+					<a href="https://twitter.com/rachantha" target='_blank'>
+						<i class="fa fa-twitter" aria-hidden="true"></i>
+					</a>
+				</div>
+			</div>
 		</div>
+		<i class='fa fa-chevron-circle-up faa-vertical animated uparrow'></i>
 		<script type="text/javascript" src='js/jquery-3.1.1.js'></script>
-		<!-- <script type="text/javascript" src='js/utils.js'></script> -->
 		<script type="text/javascript" src='js/tether.min.js'></script>
-		<!-- <script src="https://npmcdn.com/tether@1.2.4/dist/js/tether.min.js"></script> -->
 		<script type="text/javascript" src='js/bootstrap.min.js'></script>
 		<script type="text/javascript" src='js/portfolio.js'></script>
 		<script type="text/javascript">
-			var navigatr = document.getElementById('navigator');
-			var alternavbar = function(){
-				if( window.scrollY > 10 ){
-					navigatr.classList.remove('transparent');
-				}else{
-					navigatr.classList.add('transparent');
-				}
-			}
-			$('[data-toggle=tooltip]').tooltip();
-			window.addEventListener('scroll', alternavbar);
 		</script>
 	</body>
 </html>

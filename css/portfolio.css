@@ -1,11 +1,10 @@
 body{
-    background: url(../images/bg1.jpg) no-repeat fixed;
+    background: url(../images/bg2.jpg) no-repeat fixed;
     background-size: cover;
+	transition:all 5s;
 }
 .navbar{
-	/*background-color: black;*/
-	/*background-color: hsla(200, 3%, 9%, 0.8);*/ /*grey*/
-	background-color: rgba(55, 41, 124, 0.9); /*blue*/
+	background-color: rgb(33, 150, 243);
 	transition:all 0.5s;
 }
 .nav-item .nav-link{
@@ -30,30 +29,53 @@ body{
 }
 .navbar-brand{
 	font-family: 'Gloria Hallelujah', cursive;
-	/*font-size:27px;*/
 }
-.portfolio-content{
+.portfolio{
+	/*background-color:rgba(0, 0, 0, 0.8);*/
 	background-color:rgba(28, 28, 27, 0.6);
 	margin: 4.56rem 0.625rem 0.625rem 0.625rem;
-	/*margin: 73px 10px 10px 10px;*/
 }
 #home{
 	padding: 1vw;
 }
-#project{
-	background-color: rgba(25, 24, 24, 0.8);
-	padding-left: 15px;
-	padding-top:15px;
+#home img{
+	margin-top:50px;
+	width:24vw;
+}
+#project, #contact{
+    background-color: #e3f3ff;
+    background-image: url("https://www.transparenttextures.com/patterns/low-contrast-linen.png");
 }
 #project .row{
 	margin-right:0;
 	margin-left:0;
 }
 #project .row div{
-	padding-top: 0px;
-	padding-bottom: 15px;	
-	padding-left: 0px;
-	padding-right: 15px;
+	/*margin: 0px 15px 15px 0px;*/
+	/*padding: 2%;*/
+	padding: 2%;
+	/*padding: 0px 15px 15px 0px;*/
+}
+#project a{
+	display: block;
+	width:100%;
+	height: 100%;
+	transition: transform 0.3s ease;
+	position: relative;
+}
+#project a:hover{
+	transform: scale(1.1);
+}
+#project a:hover::after{
+    content: attr(data-placeholder);
+    position: absolute;
+    background-color: #03A9F4;
+    bottom: 0px;
+    left: 0px;
+    width: 100%;
+	transition: transform 3s ease;
+    line-height: 45px;
+    color:white;
 }
 #project img{
 	content: url('../images/placeholder.jpg');
@@ -61,53 +83,86 @@ body{
 #project img.tribute{
 	content: url('../images/tribute.png');
 }
-.portfolio-face{
-	margin-top:50px;
-	/*width:343px;*/
-	width:24vw;
-}
-.portfolio-designation {
-    font-family: 'Exo', sans-serif;
-	font-size: 3vw;
-    line-height: 93px;
-}
-.portfolio-contact{
-	margin:30px 0px 10px 20px;
-    height: calc(100% - 30px);
-    background-color: rgba(54, 54, 49, 0.4);
+.portfolio .heading{
+	margin-top:15px;
+	margin-bottom: 15px;
+    background: linear-gradient(to right, #03A9F4, #3F51B5);
+    background-color: #2196F3;
+    box-shadow: 0px 3px 21px 1px #00335b;
+	font-family: 'Cormorant Unicase', serif;
+	line-height: 100px;
 }
 .devicon{
 	font-size: 3.5rem;
 }
-.portfolio-skillset{
-	display: inline-block;
-	transition: transform 0.3s ease;
+#home .designation {
+    font-family: english-small-caps, serif;
+	font-size: 3vw;
+    line-height: 93px;
 }
-.portfolio-skillset:hover{
-	transform: scale(1.1);
-}
-.portfolio-skillsets{
+#home .skillsets{
     margin-top: 5rem;
     text-align: center;
 }
-.portfolio-skillsets i{
+#home .skillsets i{
 	margin-left: 6px;
 }
+#home .skillset{
+	display: inline-block;
+	transition: transform 0.3s ease;
+}
+#home .skillset:hover{
+	transform: scale(1.1);
+}
+#contact{
+	padding: 68px;
+    background: linear-gradient(to right, #03A9F4, #3F51B5);
+    background-color: #2196F3;
+    box-shadow: 0px 3px 21px 1px #00335b;
+	font-family: 'Cormorant Unicase', serif;
+}
+#contact a{
+	color:white;
+}
+.fa{
+	font-size:50px !important;
+	margin: 16px;
+}
+.fa:hover{
+	transform: scale(1.1);
+}
+.fa.fa-chevron-circle-up{
+	display: none;
+    position: fixed;
+    right: 5px;
+    top: 50%;
+    color: #2196F3;
+}
+.show{
+	transition: all 5s;
+	display: block !important;
+}
 @media screen and (max-width:940px){
-	.portfolio-face{
+	#home img{
 		width:226px;
 	}
-	.portfolio-designation{
+	#home .designation{
 		font-size: 20px;
+	}
+	.devicon{
+		font-size: 3rem;
 	}
 }
 @media screen and (max-width:500px){
-	.portfolio-designation{
+	#home .designation{
 		font-size: 20px;
 	    line-height: 70px;
 	} 
-	.portfolio-face{
+	#home img{
 		width:200px;
+	}
+	.devicon{
+		font-size: 2.5rem;
 	}
 }
 
