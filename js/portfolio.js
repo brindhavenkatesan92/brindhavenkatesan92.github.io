@@ -25,7 +25,7 @@ document.addEventListener('DOMContentLoaded', function(){
 		},400);
 	},300);
 	var alternavbar = function(){
-		var scrollTop =  window.scrollY;
+		var scrollTop =  window.pageYOffset;
 		if( scrollTop > 50 ){
 			navigatr.classList.remove('transparent');
 			$(downarrow).fadeIn();
